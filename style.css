@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+}
+
+.main-content{
+    flex: 1;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.side-content{
+    width: 200px;
+    padding: 20px;
+}
+
+.side-left{
+    background-color:burlywood;
+}
+
+.side-right{
+    background-color: tomato;   
+}
+
+@media only screen and (max-width: 480px){
+    .container{
+        flex-direction: column;
+    }
+
+    .main-content, .side-content{
+        width: 100%;
+    }
+}
